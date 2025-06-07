@@ -30,7 +30,7 @@ function Input({
         )}
         <input
           placeholder={placeholder}
-          className={`${inputWidth} p-3 border rounded placeholder:text-sm placeholder:font-normal`}
+          className={`${inputWidth} p-3 border border-[#E0E0E0] rounded placeholder:text-sm placeholder:font-normal`}
         />
       </div>
     </div>

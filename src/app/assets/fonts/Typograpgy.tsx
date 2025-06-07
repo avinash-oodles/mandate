@@ -3,7 +3,7 @@ import React from 'react';
 
 type Props = {
     children: React.ReactNode;
-    size: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+    size: 'h1' | 'h2' | 'h3' |'title' | 'h4' | 'h5' | 'h6';
     weight?: number;
     lineheight?: string;
     spacing?: string;
@@ -15,6 +15,7 @@ const sizes = {
     h1: '36px',
     h2: '28px',
     h3: '24px',
+    title: '20px',
     h4: '18px',
     h5: '16px',
     h6: '14px',

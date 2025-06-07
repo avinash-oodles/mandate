@@ -25,7 +25,7 @@ export default function Home() {
         <form className="flex flex-col items-center justify-center">
           <Input
             label="Email"
-            placeholder="Enter"
+            placeholder="Email"
             icon={<MailIcon className="w-4 h-5 text-black" />}
             className="mb-4 w-full"
             inputWidth="w-full"
