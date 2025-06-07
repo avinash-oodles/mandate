@@ -5,16 +5,34 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-}
-body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--foreground);
+  color: var(--background);
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  
+  /* Main Colors */
+  --primary: #18428C;
+  --secondary: #0288C3;
+
+  /* Functional Colors */
+  --info: #2482D6;
+  --success: #2ECC71;
+  --warning: #F2C94C;
+  --error: #EB5757;
+  --link: #2F80ED;
+  --blueShade: #203AA1;
+
+  /* Gray Scale */
+  --gray1: #333333;
+  --gray2: #4F4F4F;
+  --gray3: #828282;
+  --gray4: #BDBDBD;
+  --gray5: #E0E0E0;
+  --gray6: #F2F2F2;
+
+  /* Default Light Mode Background/Text */
+  --background: #FFFFFF;
+  --text: #333333;
 }
 
 @theme inline {
@@ -26,6 +44,7 @@ body {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+     --text: #F3F4F6;
   }
 }
 

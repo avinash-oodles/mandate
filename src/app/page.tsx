@@ -2,6 +2,6 @@
 
 export default function Home() {
   return (
-    <div className="bg-red-300">hiii</div>
+    <div className="bg-[var(--foreground)]">hiii</div>
   );
 }
