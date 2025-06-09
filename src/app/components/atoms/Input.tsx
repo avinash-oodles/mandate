@@ -1,13 +1,16 @@
 'use client';
-
 import React from 'react';
+
 
 type InputProps = {
   label: string;
   placeholder: string;
   icon?: React.ReactNode;
   className?: string;
-  inputWidth?: string; 
+  inputWidth?: string;
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void; 
+  type?: string;
 };
 
 function Input({
@@ -16,10 +19,13 @@ function Input({
   icon,
   className = '',
   inputWidth = 'w-full',
+  value,      
+  onChange,   
+  type = 'text',
 }: InputProps) {
   return (
     <div className={`flex flex-col ${className}`}>
-      <label className="text-left font-medium text-base leading-[1.4]">
+      <label className="text-left font-medium text-base leading-[1.4] mb-1">
         {label}
       </label>
       <div className="relative h-[44px]">
@@ -29,8 +35,11 @@ function Input({
           </div>
         )}
         <input
+          type={type}        
           placeholder={placeholder}
-          className={`${inputWidth} p-3 border border-[#E0E0E0] rounded placeholder:text-sm placeholder:font-normal`}
+          value={value}       
+          onChange={onChange} 
+          className={`${inputWidth} p-3 pr-10 border border-[#E0E0E0] rounded placeholder:text-sm placeholder:font-normal`}
         />
       </div>
     </div>
@@ -38,3 +47,4 @@ function Input({
 }
 
 export default Input;
+
